@@ -13,29 +13,39 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Un Pedacito de Cielo | ¡Hacemos realidad el evento de tus sueños!">
   <meta property="og:description" content="Decoración premium para Baby Shower y Revelación de Género: letras gigantes, globos, pirotecnia y humo de colores en la playa. Cotiza tu Promo del mes por WhatsApp.">
-  <meta property="og:image" content="assets/img/hero-revelacion-genero-playa.jpg">
+  <meta property="og:image" content="assets/img/hero-oh-baby-playa-atardecer.jpg">
   <meta property="og:locale" content="es_MX">
 
   <link rel="icon" type="image/png" href="assets/img/logo-mark.png">
 
-  <!-- Fuentes: script elegante para titulares + sans limpia para lectura -->
+  <!-- Fuentes: serif editorial elegante para titulares + sans minimal para lectura -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Alegreya+Sans+SC:wght@500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Precarga de la imagen del hero (fondo vía CSS) para no perjudicar el LCP -->
+  <link rel="preload" as="image" href="assets/img/hero-oh-baby-playa-atardecer.jpg">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <img class="preloader-logo" src="assets/img/logo-mark.png" alt="" width="60" height="43">
+      <div class="spinner-ring" aria-hidden="true"></div>
+      <p class="preloader-text">Un Pedacito de Cielo</p>
+    </div>
+  </div>
+  <noscript><style>#preloader{display:none !important;} .hero-fade-1,.hero-fade-3,.hero-fade-4,.hero-fade-5,.scroll-cue,.hero-float-card{opacity:1 !important;transform:none !important;} .line-inner{transform:none !important;}</style></noscript>
 
   <!-- ===================== HEADER ===================== -->
   <header class="site-header" id="header">
     <div class="container header-inner">
       <a href="#hero" class="brand">
         <img class="logo-mark" src="assets/img/logo-mark.png" alt="Un Pedacito de Cielo - logo arcoíris y nubes" width="56" height="40">
-        <span class="brand-text">
-          <span class="brand-name">Un Pedacito <em>de Cielo</em></span>
-          <span class="brand-tag">Eventos Decoración · Revelación de Género · Luces &amp; Pirotecnia</span>
-        </span>
+        <span class="brand-name">Un Pedacito <em>de Cielo</em></span>
       </a>
 
       <nav class="main-nav" id="main-nav">
@@ -46,7 +56,7 @@
         <a href="#contacto">Contacto</a>
       </nav>
 
-      <a class="btn btn-whatsapp header-cta" href="https://wa.me/526641352321?text=Hola%20Mónica%2C%20quiero%20cotizar%20mi%20evento%20con%20Un%20Pedacito%20de%20Cielo%20✨" target="_blank" rel="noopener">
+      <a class="btn btn-nav-cta header-cta" href="https://wa.me/526641352321?text=Hola%20Mónica%2C%20quiero%20cotizar%20mi%20evento%20con%20Un%20Pedacito%20de%20Cielo%20✨" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" class="icon-wa" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2.1 3.2 5 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3C8.6 21.5 10.3 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.2.8.9-3.1-.2-.3C4 14.9 3.6 13.5 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.4-8.4 8.4z"/></svg>
         Reserva tu fecha
       </a>
@@ -59,39 +69,59 @@
 
   <!-- ===================== HERO ===================== -->
   <section class="hero" id="hero">
-    <div class="hero-media">
-      <img src="assets/img/hero-revelacion-genero-playa.jpg" alt="Revelación de género en la playa al atardecer con humo de colores rosa y azul, letras gigantes OH BABY iluminadas y arcos de globos organicos" loading="eager">
-      <div class="hero-overlay"></div>
-      <div class="hero-clouds" aria-hidden="true"></div>
+    <div class="hero-backdrop">
+      <div class="hero-media" id="hero-media" role="img" aria-label="Revelación de género OH BABY en la playa al atardecer con letras gigantes iluminadas y arcos de globos rosa y azul"></div>
+      <div class="hero-scrim"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
     </div>
 
-    <div class="container hero-content">
-      <p class="eyebrow">✨ Un Pedacito de Cielo</p>
-      <h1>Hacemos realidad<br><span class="script">el evento de tus sueños</span></h1>
-      <p class="hero-sub">Decoración soñadora, luces y pirotecnia para tu Baby Shower o Revelación de Género. Convertimos tu espera en un recuerdo inolvidable, en cualquier tipo de lugar. 🩷💙</p>
+    <div class="hero-aurora" id="hero-aurora" aria-hidden="true"></div>
+    <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
 
-      <div class="hero-actions">
+    <div class="container hero-content">
+      <p class="hero-badge hero-fade-1"><span class="hero-badge-dot"></span>Eventos en playa · Tijuana / Rosarito</p>
+
+      <h1 class="hero-title">
+        <span class="line-mask"><span class="line-inner">Hacemos realidad</span></span>
+        <span class="line-mask"><span class="line-inner script hero-typewriter">el evento de tus sueños</span></span>
+      </h1>
+
+      <p class="hero-sub hero-fade-3">Decoración soñadora, luces y pirotecnia para tu Baby Shower o Revelación de Género. Convertimos tu espera en un recuerdo inolvidable, en cualquier tipo de lugar.</p>
+
+      <div class="hero-actions hero-fade-4">
         <a class="btn btn-primary btn-lg" href="https://wa.me/526641352321?text=Hola%20Mónica%2C%20quiero%20cotizar%20la%20Promo%20Playa%20✨" target="_blank" rel="noopener">
           Cotiza tu Promo del mes
         </a>
-        <a class="btn btn-ghost btn-lg" href="#galeria">Ver eventos realizados</a>
+        <a class="btn btn-outline-light btn-lg" href="#galeria">Ver eventos realizados</a>
       </div>
 
-      <ul class="hero-trust">
-        <li>🎈 Diseño 100% personalizado</li>
-        <li>🚚 Montaje y desmontaje incluidos</li>
-        <li>💬 Coordinado por Mónica García</li>
+      <ul class="hero-trust hero-fade-5">
+        <li>Diseño 100% personalizado</li>
+        <li>Montaje y desmontaje incluidos</li>
+        <li>Coordinado por Mónica García</li>
       </ul>
     </div>
 
-    <a href="#promo" class="scroll-cue" aria-label="Bajar a la promoción">
-      <span></span>
-    </a>
+    <div class="hero-float-card hero-float-card-1" id="float-card-1">
+      <span class="hero-float-icon" aria-hidden="true">◆</span>
+      <p>Playa, jardín o salón —<br><strong>tú eliges el escenario</strong></p>
+    </div>
+    <div class="hero-float-card hero-float-card-2" id="float-card-2">
+      <div class="hero-float-avatar">MG</div>
+      <div>
+        <p class="hero-float-name">Mónica García</p>
+        <p class="hero-float-role">Tu coordinadora personal</p>
+      </div>
+    </div>
+
+    <button class="scroll-cue" id="scroll-cue" aria-label="Bajar a la promoción">
+      <span class="scroll-cue-track"><span class="scroll-cue-dot"></span></span>
+      <span class="scroll-cue-label">Descubre más</span>
+    </button>
   </section>
 
   <!-- ===================== PROMO DEL MES ===================== -->
   <section class="promo" id="promo">
-    <div class="cloud-divider top" aria-hidden="true"></div>
     <div class="container">
       <div class="promo-badge">🩷💙 PROMO PLAYA · CUPO LIMITADO ESTE MES 💙🩷</div>
       <h2>Celebra la Espera <span class="script">en la playa</span></h2>
@@ -128,7 +158,6 @@
         </div>
       </div>
     </div>
-    <div class="cloud-divider bottom" aria-hidden="true"></div>
   </section>
 
   <!-- ===================== SERVICIOS ===================== -->
@@ -166,6 +195,20 @@
     </div>
   </section>
 
+  <!-- ===================== SPOTLIGHT ===================== -->
+  <section class="spotlight">
+    <div class="spotlight-media" role="img" aria-label="Pareja frente a letras gigantes BABY iluminadas de noche, rodeada de globos y un oso de peluche gigante"></div>
+    <div class="spotlight-overlay"></div>
+    <div class="container spotlight-content">
+      <p class="eyebrow">Un instante inolvidable</p>
+      <h2>La magia sucede cuando <span class="script">menos lo esperas</span></h2>
+      <p>Cada detalle se diseña para ese segundo exacto en el que la noticia se revela. Nosotros creamos el escenario; ustedes viven el momento.</p>
+      <a class="btn btn-whatsapp btn-lg" href="https://wa.me/526641352321?text=Hola%20Mónica%2C%20quiero%20cotizar%20mi%20evento%20con%20Un%20Pedacito%20de%20Cielo%20✨" target="_blank" rel="noopener">
+        Agenda tu fecha
+      </a>
+    </div>
+  </section>
+
   <!-- ===================== GALERÍA ===================== -->
   <section class="gallery" id="galeria">
     <div class="container">
@@ -182,9 +225,6 @@
         </div>
         <div class="gallery-item">
           <img src="assets/img/arco-globos-girl-or-boy-dorado.jpg" alt="Arco de globos dorado y beige con letrero Girl or Boy para revelación de género" loading="lazy">
-        </div>
-        <div class="gallery-item">
-          <img src="assets/img/evento-revelacion-genero-nocturna.jpg" alt="Pareja frente a letras gigantes BABY iluminadas de noche con globos y oso de peluche" loading="lazy">
         </div>
         <div class="gallery-item">
           <img src="assets/img/decoracion-letras-baby-jardin.jpg" alt="Letras gigantes BABY iluminadas rodeadas de globos rosa y azul" loading="lazy">
@@ -213,7 +253,6 @@
 
   <!-- ===================== TESTIMONIOS ===================== -->
   <section class="testimonials" id="testimonios">
-    <div class="cloud-divider top" aria-hidden="true"></div>
     <div class="container">
       <p class="eyebrow center">Familias felices</p>
       <h2 class="center">Historias con <span class="script">un pedacito de cielo</span></h2>
@@ -233,7 +272,6 @@
         </blockquote>
       </div>
     </div>
-    <div class="cloud-divider bottom" aria-hidden="true"></div>
   </section>
 
   <!-- ===================== CONTACTO / CTA FINAL ===================== -->
@@ -289,6 +327,7 @@
   <!-- Botón flotante de WhatsApp -->
   <a class="float-whatsapp" href="https://wa.me/526641352321?text=Hola%20Mónica%2C%20quiero%20información%20de%20Un%20Pedacito%20de%20Cielo%20✨" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2.1 3.2 5 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3C8.6 21.5 10.3 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.2.8.9-3.1-.2-.3C4 14.9 3.6 13.5 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.4-8.4 8.4z"/></svg>
+    <span class="float-whatsapp-label">Escríbenos</span>
   </a>
 
   <script src="js/script.js"></script>
